@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Header from './Components/Header';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Featured from './Components/Featured '
+import Satisfied from './Components/Satisfied'
+import Marketing from './Components/Marketing';
+import Start from './Components/Start';
+import Actual from './Components/Actual';
+import Partner from './Components/Partner';
+import Goals from './Components/Goals';
+import FormsLearn from './Components/FormsLearn';
+import Footer from './Components/Footer';
+import BackToTop from './Components/BackToTop';
+import MyPreloader from './Components/MyPreloader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <div className='overflow-hidden'>
+  <MyPreloader/>
+  <BackToTop/>
+ <Header/>
+ <Featured/>
+ <Satisfied/>
+ <Marketing/>
+ <Start/>
+ <Partner/>
+ <Actual/>
+<FormsLearn/>
+ <Goals/>
+ <Footer/>
+ </div>
   );
-}
+};
 
 export default App;
