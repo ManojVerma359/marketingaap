@@ -579,7 +579,15 @@ h6 {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
-
+.nav-link::before{
+  position: absolute;
+  content: url(../src/assets/image/red_line.png);
+  margin-top: 24px;
+  opacity: 0;
+}
+.nav-link.active::before{
+  opacity: 1;
+}
 /* 
 .nav-tabs .nav-link {
   margin-bottom: none !important;
