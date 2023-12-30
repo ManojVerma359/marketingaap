@@ -92,6 +92,7 @@ const Header = () => {
                   <a href="">
                     <Sreach />
                   </a>
+ 
                 </li>
                 <li className="d-flex align-items-center">
                   <button className="talkbtn fs-15 fw-700 ff-maison  ">
@@ -103,7 +104,7 @@ const Header = () => {
                 </li>
               </ul>
               <button
-                className="open d-block d-lg-none navicon z_indexxx nav_icon fills position-relative fill-white"
+                className="open d-block d-lg-none navicon z_indexxx nav_icon fills position-relative fill-white p-4"
                 onClick={() => {
                   setShow(!show)}}>{show ? <Close/>:<Navicons/>}
                 {/* <Navicons /> */}
@@ -158,6 +159,7 @@ const Header = () => {
         </div>
 
       </section>
+     
     </>
   );
 };

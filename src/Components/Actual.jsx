@@ -8,6 +8,8 @@ import old_man2 from "../assets/image/old_man2.png";
 import old_man3 from "../assets/image/old_man3.png";
 import { Arrow_left, Arrow_right, Uslogo } from "./Iconsvg";
 import { Container } from "react-bootstrap";
+import {Youtube_logo} from './Iconsvg'
+
 
 const Actual = () => { 
   const slider = React.useRef(null); 
@@ -74,7 +76,10 @@ const Actual = () => {
         </div>
         <Slider ref={slider} {...setsettings} className="setslider">
           <div className="  d-flex align-items-center justify-content-center flex-column pb-5 opcity_ z_index5 slider-card">          
+            <div className="position-relative d-flex justify-content-center">
             <img className="img_height" src={old_man3} alt="#id" />
+            <span className="yt_logo"><Youtube_logo/></span>
+            </div>
             <p className="fs-30 fw-300 ff-maison text-white mt-5">
               “They are really aligned with how we{" "}
               <span className="d-block fs-30 fw-300 ff-maison text-white">
@@ -96,7 +101,10 @@ const Actual = () => {
           </div>
           
           <div className="  d-flex align-items-center justify-content-center flex-column pb-5 z_index5 slider-card">          
-            <img className="img_height" src={old_man2} alt="#id" />
+<div className="position-relative d-flex justify-content-center">
+<img className="img_height" src={old_man2} alt="#id" />
+            <span className="yt_logo"><Youtube_logo/></span>
+</div>
             <p className="fs-30 fw-300 ff-maison text-white mt-5">
               “They are really aligned with how we{" "}
               <span className="d-block fs-30 fw-300 ff-maison text-white">
@@ -117,7 +125,10 @@ const Actual = () => {
             <span className="mb-5 pt-1"><Uslogo /></span>
           </div>
           <div className="  d-flex align-items-center justify-content-center flex-column pb-5 opcity_ z_index5 slider-card">          
-            <img className="img_height" src={old_man} alt="#id" />
+          <div className="position-relative d-flex justify-content-center">
+<img className="img_height" src={old_man} alt="#id" />
+            <span className="yt_logo"><Youtube_logo/></span>
+</div>
             <p className="fs-30 fw-300 ff-maison text-white mt-5">
               “They are really aligned with how we{" "}
               <span className="d-block fs-30 fw-300 ff-maison text-white">

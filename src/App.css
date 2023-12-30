@@ -60,6 +60,24 @@ body{
   background-color: white;
 }
 
+.scrollTop {
+  animation-name: scrollTop;
+  animation-duration: 4000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollTop {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
  /* preloader  */
 .animation_preloader {
   animation: loder 4s linear;
@@ -218,7 +236,11 @@ path {
   bottom: 0;
   right: 0;
   z-index: 1 !important;
+ 
+  
 }
+
+
 .vleft {
   position: absolute;
   content: "";
@@ -241,7 +263,7 @@ path {
   padding: 9px 9px 9px 24px;
   border-radius: 64px;
   border: 2px solid var(--color-11, #fff);
-  /* gap: 100px; */
+  gap: 30px;
   justify-content: space-between;
   display: flex;
 }
@@ -459,6 +481,17 @@ h6 {
   border: none !important;
   outline: none !important;
 }
+.enter_inpt{
+  outline: none !important;
+  border: none !important;
+}
+.yt_logo{
+  position: absolute;
+  content: 'https://www.youtube.com/watch?v=OXGznpKZ_sA';
+  right: 15%;
+  bottom: 10%;
+  cursor: pointer;
+}
 
 /* Actual_Section */
 .bgimg {
@@ -473,7 +506,7 @@ h6 {
 .pt-119 {
   padding-top: 119px;
 }
-/* .slick-dots { 
+.slick-dots { 
   position: absolute;
   bottom: 40px !important;
   display: block;
@@ -484,7 +517,7 @@ h6 {
   margin: 0;
   list-style: none;
   text-align: center;
-}  */
+} 
 .slick-dots li button:before {
   font-family: "slick";
   font-size: 6px;
@@ -557,7 +590,15 @@ h6 {
 .subscribe_btn {
   padding: 31px 32px ;
   background: #ff4242;
+  transition: all 400ms linear;
+ 
 
+}
+.subscribe_btn:hover{
+  background-color: #ff4242;
+  opacity: 0.8;
+  transition: all 400ms linear;
+ 
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -608,6 +649,30 @@ h6 {
   animation-duration: 4000ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+.loopline1{
+  position: absolute;
+  content: '';
+  top: -20%;
+  left: -70%;
+  transition: all 300ms linear;
+
+opacity: 0;
+}
+.loopline1:hover{
+  opacity: 1;
+}
+.loopline2{
+  position: absolute;
+  content: '';
+  top: -60%;
+  left: -40%;
+  transition: all 300ms linear;
+
+opacity: 0;
+}
+.loopline2:hover{
+  opacity: 1;
 }
 @keyframes circl_img {
   0% {
@@ -732,7 +797,7 @@ video  button{
   bottom: 6%;
   left: 3%;
   height: 273px;
-  max-width: 385px;
+  max-width: 350px !important;
   padding: 24px 24px 16px 24px;
   border-radius: 25px;
   background: #fff;
@@ -803,6 +868,13 @@ input::placeholder {
   padding-bottom: 90px;
 }
 
+
+.linegreen{
+ 
+ text-decoration: underline !important;
+  color: #D2F038 !important;
+}
+
 @media (min-width: 768px) {
   :root {
     /* font-size */
@@ -835,8 +907,17 @@ input::placeholder {
     top: 30%;
     z-index: 1 !important;
   }
+  .entertype {
+    /* max-width:30% !important; */
+    padding: 18px 11px 18px 24px;
+    border-radius: 64px;
+    border: 2px solid var(--color-11, #fff);
+    gap: 100px;
+    justify-content: space-between;
+    display: flex;
+  }
   .ptt-90 {
-    padding-top: 90px;
+    padding-top: 50px;
   }
   .circlimg {
     position: absolute;
@@ -882,7 +963,7 @@ input::placeholder {
     bottom: 6%;
     left: 6%;
     height: 324px;
-    max-width: 385px;
+    max-width: 326px !important;
     padding: 24px 24px 16px 24px;
     border-radius: 25px;
     background: #fff;
@@ -894,7 +975,7 @@ input::placeholder {
     bottom: 6%;
     left: 6%;
     height: 324px;
-    max-width: 385px;
+    max-width: 326x !important;
     padding: 24px 24px 16px 24px;
     border-radius: 25px;
     background: #fff;
@@ -906,7 +987,7 @@ input::placeholder {
     bottom: 6%;
     left: 6%;
     height: 324px;
-    max-width: 385px;
+    max-width: 326px !important;
     padding: 24px 24px 16px 24px;
     border-radius: 25px;
     background: #fff;
@@ -939,6 +1020,14 @@ input::placeholder {
   .gap-100 {
     gap: 100px;
   }
+  .yt_logo{
+    position: absolute;
+    content: 'https://www.youtube.com/watch?v=OXGznpKZ_sA';
+    right: 5%;
+    bottom: 10%;
+    cursor: pointer;
+  }
+  
 }
 @media (min-width: 1200px) {
   .nav_width {
@@ -1063,6 +1152,31 @@ input::placeholder {
     background: #fff;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.13);
   }
+  .bg_cardone {
+    background-image: url(./assets/image/cardone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 590px !important;
+    height: 512px !important;
+    flex-shrink: 0;
+  }
+  
+  .bg_cardtwo {
+    background-image: url(./assets/image/cardtwo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 590px !important;
+    height: 512px !important;
+    flex-shrink: 0;
+  }
+  .bg_cardthree {
+    background-image: url(./assets/image/cardthree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 590px !important;
+    height: 512px !important;
+    flex-shrink: 0;
+  }
 }
 @media (max-width: 992px) {
   nav ul {
@@ -1102,6 +1216,9 @@ input::placeholder {
     top: 48px;
     left: 219.25px !important;
     opacity: 0.3;
+  }
+  .ptt-110{
+    padding-top: 110px;
   }
 }
 @media (min-width: 576px) {
@@ -1148,3 +1265,5 @@ input::placeholder {
 .object_fit{
   object-fit: cover !important;
 }
+
+

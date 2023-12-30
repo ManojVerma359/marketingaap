@@ -117,25 +117,25 @@ const FormsLearn = () => {
             <Col xl={4} md={6} className="mt-xl-0 mt-4  justify-content-center">
               <div className="position-relative">
                 <img className="w-100 " src={guides_img3} alt="#id" />
-                <div className="guides_card3">
+                <div className="guides_card2">
                   <p className="fs-15 fw-600 ff-maison text-uppercase txt_blue">
-                    ecommerce
+                  lead-gen
                   </p>
                   <p className="fs-30 fw-300 ff-maison  lheight pt-2">
-                  How to Sell building {" "}
+                  Get Your Sales Team{" "}
                     <span className="fs-30 fw-300 ff-maison  d-block">
-                    Materials Online
+                    Ready for Digital Leads
                     </span>
                   </p>
                   <p className="fs-15 fw-400 ff-maison  pt-2 ">
-                  Explore how selling building
+                  unlock substantial business growth
                     <span className="d-block fs-15 fw-400 ff-maison">
                       {" "}
-                      materials online opens up wider
-                    </span>audiences, efficient sales and insightful data,
+                      by enhancing collaboration skills 
 
+                    </span>and digital marketing expertise
                   </p>
-                  <div className="d-flex align-items-center gap-3 ptt-90  pb-2">
+                  <div className="d-flex align-items-center gap-3 ptt-90 pb-2">
                     <p className="fs-15 fw-400 ff-maison ">Read More</p>
                     <Arrowsvg />
                   </div>

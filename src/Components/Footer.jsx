@@ -141,12 +141,16 @@ const Footer = () => {
           </Col>
           <Col md={2}>
             <p className="fs-12 fw-500 ff-maison text-white">contact</p>
-            <p className="fs-13 fw-400 ff-maison text-white pt-4">
+        <div className="">
+        <p className="fs-13 fw-400 ff-maison text-white pt-4 linegreen ">
               info@venveo.com
             </p>
-            <p className="fs-13 fw-400 ff-maison text-white pt-3">
+        </div>
+     <div className="">
+     <p className="fs-13 fw-400 ff-maison text-white pt-3 linegreen ">
               1 · 800 · 123 · 4567
             </p>
+     </div>
           </Col>
           <Col lg={4}>
             <div className="d-flex align-items-center justify-content-end gap-100">

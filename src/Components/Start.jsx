@@ -18,7 +18,7 @@ const Start = () => {
     </Col>
     <Col lg={5} className='mt-lg-0 mt-3'>
 <div className='enterinput d-flex align-items-center justify-content-between border-0'>
-<input type="text" placeholder='Enter Your Website' className='fs-20 fw-400 ff-maison border-0 enter_inpt outline-0' />
+<input type="text" placeholder='Enter Your Website' className='fs-20 fw-400 ff-maison  enter_inpt ' />
 <button className='fs-15 fw-600 ff-maison text-black bg-white border-0 p-3 rounded-5'>Submit</button>
 
     </div>  

@@ -30,7 +30,7 @@ const Marketing = () => {
             </p>
           </div>
           <Row className="mt-81 d-flex justify-content-center gap-5">
-            <Col md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
+            <Col lg={4} md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
               <div className="d-flex flex-wrap">
                 <Logo1 />
               </div>
@@ -67,7 +67,7 @@ const Marketing = () => {
                 </div>
               </div>
             </Col>
-            <Col md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
+            <Col lg={4} md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
               <div className="d-flex flex-wrap">
                 <Logo2 />
               </div>
@@ -107,7 +107,7 @@ const Marketing = () => {
             
           </Row>
           <Row className="mt-5 d-flex justify-content-center gap-5">
-            <Col md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
+            <Col lg={4} md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
               <div className="d-flex flex-wrap">
                 <Logo3 />
               </div>
@@ -140,7 +140,7 @@ const Marketing = () => {
                 </div>
               </div>
             </Col>
-            <Col md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
+            <Col lg={4} md={5} className="d-flex gap-3 box1 flex-wrap flex-xl-nowrap">
               <div className="d-flex flex-wrap">
                 <Logo4 />
               </div>
